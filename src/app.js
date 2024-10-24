@@ -1,11 +1,49 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = [
+  "the",
+  "our",
+  "i",
+  "you",
+  "he",
+  "she",
+  "it",
+  "we",
+  "they",
+  "him",
+  "mine",
+  "us",
+];
+let adj = [
+  "great",
+  "big",
+  "bad",
+  "small",
+  "brave",
+  "calm",
+  "clever",
+  "talented",
+  "angry",
+  "arrogant",
+  "rude",
+  "sad",
+];
+let noun = [
+  "jogger",
+  "racoon",
+  "table",
+  "party",
+  "ball",
+  "chair",
+  "house",
+  "glass",
+  "t-shirt",
+  "watch",
+];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (let i = 0; i < pronoun.length; i++) {
+  for (let j = 0; j < adj.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      let resultado = `${pronoun[i]}${adj[j]}${noun[k]} .com`;
+      console.log(resultado);
+    }
+  }
+}
